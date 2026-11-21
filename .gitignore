@@ -1,3 +1,18 @@
-*.transcript.json
 __pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# media and per-movie files (review files contain the actual words; cuts files are meant to be shared)
 *.wav
+*.mkv
+*.mp4
+*.mka
+*.review.json
+*.report.json
+*.transcript.json
+.moviefilter-backup/

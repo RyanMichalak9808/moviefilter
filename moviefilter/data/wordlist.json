@@ -1,0 +1,125 @@
+{
+  "_comment": "Patterns are full-match regexes applied to one normalized word (lower-case, punctuation stripped). Phrases are lists of patterns for consecutive words. Levels: strong, slurs, mild, religious. Copy this file and pass --wordlist to customize.",
+  "en": {
+    "levels": {
+      "strong": {
+        "words": [
+          "f+u+c*k+(?:s|ed|er|ers|ing|ings|in|n|y|face|faces|head|heads|wit|wits|tard|tards|up|ups|off|boy|boys)?",
+          "mother-?f+u+c*k+(?:a|as|er|ers|ing|in|s)?",
+          "(?:bull|horse|bat|dip|chicken|ape|dog|cow|holy-?)?s+h+i+t+(?:s|ty|tier|tiest|ting|tin|ted|head|heads|hole|holes|face|faced|show|storm|load|less|bag|bags)?",
+          "s+h+i+t+e+",
+          "b+i+t+c+h+(?:es|ed|ing|in|y|ier|iest|ass)?",
+          "c+u+n+t+(?:s|y)?",
+          "(?:ass|arse)-?holes?",
+          "(?:dumb|jack|smart|fat|lame|dip|wise)-?ass(?:es)?",
+          "bastards?",
+          "cock-?suck(?:er|ers|ing|in)?",
+          "dick(?:s|head|heads|wad|wads|less)?",
+          "puss(?:y|ies)",
+          "whor(?:e|es|ing)",
+          "sluts?|slutty",
+          "twats?",
+          "wank(?:er|ers|ing|s)?",
+          "god-?damn(?:ed|it|n)?|god-?dammit",
+          "bollocks",
+          "jerk-?off"
+        ],
+        "phrases": [
+          ["son", "of", "a", "b+i+t+c+h+\\w*"],
+          ["sons", "of", "b+i+t+c+h+\\w*"],
+          ["piece", "of", "s+h+i+t+"],
+          ["god", "damn(?:ed|it|n)?|dammit"]
+        ]
+      },
+      "slurs": {
+        "words": [
+          "n+[i1]+g+(?:a|ah|as|az|er|ers|uh|uhs)",
+          "f+a+g+(?:s|g?ots?|gy)?",
+          "retard(?:s|ed)?",
+          "trann(?:y|ies)",
+          "chinks?",
+          "spics?",
+          "kikes?",
+          "gooks?",
+          "wetbacks?",
+          "dykes?"
+        ],
+        "phrases": []
+      },
+      "mild": {
+        "words": [
+          "d+a+m+n+(?:ed|ing|it|s)?",
+          "dammit",
+          "hell",
+          "a+s+s+(?:es)?",
+          "arses?",
+          "crap(?:s|py|pier)?",
+          "bloody",
+          "piss(?:ed|es|ing|y)?",
+          "bugger(?:s|ed)?",
+          "douche(?:s|bag|bags)?",
+          "turds?",
+          "tits|titties",
+          "cocks?",
+          "pricks?",
+          "badass(?:es)?",
+          "kick-?ass"
+        ],
+        "phrases": [["what", "the", "hell"], ["go", "to", "hell"]]
+      },
+      "religious": {
+        "words": ["jesus", "christ", "jeez", "geez"],
+        "phrases": [
+          ["oh", "my", "god"],
+          ["oh", "god"],
+          ["my", "god"],
+          ["for", "god's|gods", "sake"],
+          ["swear", "to", "god"],
+          ["god", "almighty"],
+          ["dear", "god"]
+        ]
+      }
+    },
+    "possible_names": ["dick"],
+    "fuzzy": {"strong": ["fuck", "fucking", "fucker", "shit", "bitch", "cunt", "asshole", "motherfucker", "bastard"]},
+    "allow": ["shii?take", "hello", "class", "pass", "mass", "bass", "glass", "assume", "scunthorpe", "dickens"]
+  },
+  "es": {
+    "levels": {
+      "strong": {
+        "words": ["mierdas?", "put[ao]s?|put[ií]sim[oa]", "jod(?:er|ido|ida|idos|idas|e|an)", "co[ñn]o", "cabr[oó]n(?:es|a|as)?",
+                  "pendej[oa]s?|pendejadas?", "carajo", "gilipollas", "chingad[oa]s?|ching(?:ar|a|ue|uen)", "vergas?", "maric[oó]n(?:es)?"],
+        "phrases": [["hijo", "de", "puta"], ["hijos", "de", "puta"]]
+      },
+      "mild": {"words": ["maldit[oa]s?", "diablos"], "phrases": []},
+      "religious": {"words": [], "phrases": [["dios", "m[ií]o"]]}
+    },
+    "fuzzy": {"strong": ["mierda", "joder", "pendejo"]},
+    "allow": []
+  },
+  "fr": {
+    "levels": {
+      "strong": {
+        "words": ["merdes?", "putains?", "connard(?:e|s|es)?", "conne(?:s|rie|ries)?", "salope(?:s)?|salaud(?:s)?",
+                  "encul[ée](?:e|s|es)?|enculer", "bordel", "niqu(?:e|er|ez)", "p[ée]d[ée]s?"],
+        "phrases": [["ta", "gueule"], ["fils", "de", "pute"]]
+      },
+      "mild": {"words": ["foutu(?:e|s|es)?", "chiant(?:e|s|es)?", "zut"], "phrases": []},
+      "religious": {"words": [], "phrases": [["mon", "dieu"]]}
+    },
+    "fuzzy": {"strong": ["merde", "putain"]},
+    "allow": []
+  },
+  "de": {
+    "levels": {
+      "strong": {
+        "words": ["scheiss(?:e|er|en|kerl)?", "arschl[oö]ch(?:er)?", "fotzen?", "wichser", "hurens[oö]hne?", "fick(?:en|t|er|dich)?", "schlampen?"],
+        "phrases": []
+      },
+      "mild": {"words": ["verdammt(?:e|en)?", "mist", "kacke"], "phrases": []},
+      "religious": {"words": [], "phrases": [["mein", "gott"], ["oh", "gott"]]}
+    },
+    "fuzzy": {"strong": ["scheisse", "arschloch"]},
+    "allow": []
+  }
+}
